@@ -17,6 +17,15 @@ class ArmorStand {
         armorStand.setGravity(false)
         armorStand.isMarker = true
         armorStand.addScoreboardTag(tag)
+
+        // 各スロットに装備を設定
+        armorStand.equipment?.helmet = ItemStack(Material.DIAMOND_HELMET) // ヘルメット
+        armorStand.equipment?.chestplate = ItemStack(Material.DIAMOND_CHESTPLATE) // チェストプレート
+        armorStand.equipment?.leggings = ItemStack(Material.DIAMOND_LEGGINGS) // レギンス
+        armorStand.equipment?.boots = ItemStack(Material.DIAMOND_BOOTS) // ブーツ
+        armorStand.equipment?.setItemInMainHand(ItemStack(Material.DIAMOND_SWORD)) // メインハンド
+        armorStand.equipment?.setItemInOffHand(ItemStack(Material.SHIELD)) // オフハンド
+        
         return armorStand
     }
 }
