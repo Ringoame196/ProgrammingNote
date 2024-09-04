@@ -7,7 +7,8 @@ import java.sql.Statement
 
 /* 
   build.gradle.kts
-  implementation("org.xerial:sqlite-jdbc:3.46.1.0") // 最新バージョンを指定してください
+  val sqliteVersion = "3.46.1.0"
+  implementation("org.xerial:sqlite-jdbc:$sqliteVersion") // 最新バージョンを指定してください
 */
   
 class DataBaseManager() {
