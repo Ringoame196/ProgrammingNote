@@ -39,9 +39,9 @@ class DiscordManager {
         }
     }
 
-    fun makeEmbed(title: String, color: Color? = null, descriptor: String? = null, image: String? = null, author: User? = null, footer: String? = null, thumbnail: String? = null, timestamp: TemporalAccessor? = null, fields: MutableList<Field>? = null): MessageEmbed {
+    fun makeEmbed(title: String,titleURL:String? = null, color: Color? = null, descriptor: String? = null, image: String? = null, author: User? = null, footer: String? = null, thumbnail: String? = null, timestamp: TemporalAccessor? = null, fields: MutableList<MessageEmbed.Field>? = null): MessageEmbed {
         val embed = EmbedBuilder()
-        embed.setTitle(title) // タイトル
+        embed.setTitle(title, titleURL) // タイトル
         embed.setDescription(descriptor) // 説明
         embed.setColor(color) // カラー
         embed.setImage(image) // 画像
