@@ -6,6 +6,11 @@ import java.sql.DriverManager
 import java.sql.PreparedStatement
 import java.sql.SQLException
 
+/*
+    val sqliteVersion = "3.46.1.0"
+    implementation("org.xerial:sqlite-jdbc:$sqliteVersion") // SQLLite
+*/
+
 class DataBaseManager(private val dbFilePath: String) {
     /**
      * SQLコマンドを実行する
