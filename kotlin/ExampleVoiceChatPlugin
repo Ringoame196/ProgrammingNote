@@ -8,11 +8,13 @@
   }
 */
 
-/*
+/* Main
+  import de.maxhenkel.voicechat.api.BukkitVoicechatService
+
   val service: BukkitVoicechatService? = server.servicesManager.load(BukkitVoicechatService::class.java)
 
         if (service != null) {
-            voicechatPlugin = ExampleVoiceChatPlugin()
+            val voicechatPlugin = ExampleVoiceChatPlugin()
             service.registerPlugin(voicechatPlugin)
             logger.info("Successfully registered example plugin")
         } else {
