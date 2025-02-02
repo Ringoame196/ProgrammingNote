@@ -6,6 +6,8 @@
   dependencies {
     compileOnly("de.maxhenkel.voicechat:voicechat-api:2.5.27")
   }
+
+  depend = listOf("voicechat")
 */
 
 /* Main
@@ -34,7 +36,7 @@ class ExampleVoiceChatPlugin : VoicechatPlugin {
      * @return the unique ID for this voice chat plugin
      */
     override fun getPluginId(): String {
-        return "SimpleVCTransceiver"
+        return "pluginName"
     }
 
     /**
