@@ -1,2 +1,2 @@
-# MCStorage
-マイクラプラグインコード置き場
+# ProgrammingNote
+コード置き場
