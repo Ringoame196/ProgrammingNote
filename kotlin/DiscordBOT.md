@@ -64,3 +64,8 @@ class DiscordManager {
     }
 }
 ```
+
+## JDAが起動するまで待つ
+```kotlin
+jda.awaitReady()
+```
